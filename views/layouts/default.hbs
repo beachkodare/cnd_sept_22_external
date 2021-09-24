@@ -11,19 +11,24 @@
 </head>
 <body>
     <main class="container">
+        <header class="row">
+                  <h1>Demo Application</h1>
+        </header>
+    <section class="row">
+        <div class="col">
+        <h2>Add an event</h2>
+        <form action="/event" method="post">
+        title: <input name="title" type="text" /> <br />
+        description: <input name="description" type="text" /> <br />
+        <br />
+        <input type="submit" name="submit" value="submit" />
+        </form>
+        </div>
+    </section>
   <div>
-      <h1>Demo Application</h1>
+
     {{{body}}}
 </div>
-<div>
-  <h2>Add an event</h2>
-    <form action="/event" method="post">
-       title: <input name="title" type="text" /> <br />
-       description: <input name="description" type="text" /> <br />
-       <br />
-        <input type="submit" name="submit" value="submit" />
-    </form>
-  </div>
   </main>
 </body>
 </html>
